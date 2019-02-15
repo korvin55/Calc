@@ -32,6 +32,10 @@ namespace FancyCalc
             string ready = "";
             string znak = "";
             char[] a = expression.ToCharArray();
+            if ( expression == null)
+            {
+                throw new ArgumentNullException();
+            }
             for (int i = 0; i < a.Length; i++)
             {
                 if (char.IsDigit(a[i]))
