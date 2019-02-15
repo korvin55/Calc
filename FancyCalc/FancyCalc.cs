@@ -29,13 +29,14 @@ namespace FancyCalc
         //generic calc method. usage: "10 + 20"  => result 30 
         public double Culculate(string expression)
         {
-            string ready = "";
-            string znak = "";
-            char[] a = expression.ToCharArray();
-            if ( expression == null)
+            if (expression == null)
             {
                 throw new ArgumentNullException();
             }
+            string ready = "";
+            string znak = "";
+            char[] a = expression.ToCharArray();
+                        
             for (int i = 0; i < a.Length; i++)
             {
                 if (char.IsDigit(a[i]))
