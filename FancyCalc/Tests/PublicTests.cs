@@ -32,5 +32,12 @@ namespace FancyCalc
             var calc = new FancyCalcEnguine();
             return calc.Multiply(a, b);
         }
+
+        [Test]
+
+        public double CulculateTest()
+        {
+
+        }
     }
 }
